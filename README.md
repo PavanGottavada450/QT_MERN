@@ -13,7 +13,7 @@ This repository contains HTML and CSS examples and exercises, designed to enhanc
 #### Installation
 Clone the repository:
 ```bash
-git clone https://github.com/PavanGottavada450/QT_HTML-CSS
+git clone "https://github.com/PavanGottavada450/QT_HTML-CSS.git"
 ```
 
 #### Usage
