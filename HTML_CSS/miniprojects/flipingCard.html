@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fliping Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        section{
+            position: relative;
+            background-color: rgb(0, 0, 0);
+            min-height: 100vh;
+            width: 100%;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective:1000px;
+        }
+        section::before{
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            transform: translate(-150px,-100px);
+            background-image: linear-gradient(90deg, rgb(234, 63, 243), rgb(246, 235, 241));
+        }
+        section::after{
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            transform: translate(150px,100px);
+            background-image: linear-gradient(90deg, rgb(246, 235, 241), rgb(234, 63, 243));
+        }   
+        .container{
+            position: relative;
+            width: 375px;
+            height: 225px;
+            z-index: 100;
+            border-radius: 14px;
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            transform-origin: center;
+            backdrop-filter: blur(25px);
+            background: rgba(255,255,255,0.1);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px;
+        }
+        .container:hover{
+            transform: rotateY(180deg);
+        }
+        .front-face, .back-face{
+            position: absolute;
+            backface-visibility: hidden;
+        }
+        .back-face{
+            transform: rotateY(180deg);
+        }
+        header, .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h5{
+            font-size: 16px;
+        }
+        .chip{
+            margin-left: 70px;
+        }
+        .main{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .card{
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .number{
+            margin-bottom: 20px;
+        }
+        .valid{
+            margin-top: 40px;
+        }
+        .time{
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="front-face">
+                <header>
+                    <span class="logo">
+                        <img src="/images/logo.png" alt="" width="50px">
+                        <h5>Master Card</h5>
+                    </span>
+                    <img src="/images/chip.png" alt="" width="60px" class="chip">
+                </header>
+                <div class="main">
+                    <div class="data">
+                        <p class="card">Card Number</p>
+                        <h4 class="number">8050 5040 2038 5020</h4>
+                        <h5>Prem Kumar Shahi</h5>
+                    </div>
+                    <div class="valid">
+                        <p class="time">Valid Thru</p>
+                        <span class="number">05/28</span>
+                    </div>
+                </div>
+            </div>
+            <div class="back-face">
+                <span>Back Content</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

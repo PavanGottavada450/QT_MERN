@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imageFilterUsingGradient</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .row1{
+            height: 400px;
+            width: auto;
+            border: 1px solid black;
+            background: no-repeat;
+            background-image:linear-gradient(rgb(0,0,255,0.7),rgb(255,0,0,0.7)),
+            url(https://img.jagranjosh.com/imported/images/E/GK/dhoni-records-odi.webp),
+            url(https://static.toiimg.com/thumb/msid-113779861,width-400,resizemode-4/113779861.jpg),
+            url(https://www.hindustantimes.com/ht-img/img/2024/11/04/550x309/CRICKET-IND-IPL-T20-CHENNAI-RAJASTHAN-21_1715533945545_1730742099461.jpg);
+            background-position: left,center,right;
+            background-size: cover, 33.3% 100%, 33.3% 100%, 33.3% 100%;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+
+        .row2{
+            height: 400px;
+            width: auto;
+            border: 1px solid black;
+            background: no-repeat;
+            background-image:radial-gradient(rgba(255, 0, 0, 0.7),rgba(232, 110, 11, 0.7),rgba(216, 225, 32, 0.7),rgba(47, 211, 21, 0.7),rgba(21, 27, 211, 0.7),rgba(122, 21, 211, 0.7),rgba(0, 0, 0, 0.7)),
+            url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-NGEQDekk2BwsllLjk4tcIM_BPIzXECdsg&s),
+            url(https://i.pinimg.com/736x/96/3d/64/963d643c81ac09fa9beb117346a1b12c.jpg),
+            url(https://i.scdn.co/image/ab67616d0000b2734219f4f48a27b891d4f8295b);
+            background-position: left,center,right;
+            background-size: cover, 33.3% 100%, 33.3% 100%, 33.3% 100%;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .row3{
+            height: 400px;
+            width: auto;
+            border: 1px solid black;
+            background: no-repeat;
+            background-image:conic-gradient(rgb(0,0,255,0.7),rgb(255,0,0,0.7)),
+            url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3lUQRHTtlfiJ8qnsaA2JxbzoVjrwcherPSw&s),
+            url(https://m.media-amazon.com/images/I/71BQOludsuL.jpg),
+            url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSomhSSKHv0jxPftO0PuTMWwr1kJg-8gzO4XQ&s);
+            background-position: left,center,right;
+            background-size: cover, 33.3% 100%, 33.3% 100%, 33.3% 100%;
+            color: whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row1">
+        <h1>MSD</h1>
+        <p> linear-gradient</p>
+    </div>
+    <br>
+    <div class="row2">
+        <h1>CR7</h1>
+        <p>radial-gradient</p>
+    </div>
+    <br>
+    <div class="row3">
+        <h1>TEAM 7</h1>
+        <p>conic-gradient</p>
+    </div>
+</body>
+</html>

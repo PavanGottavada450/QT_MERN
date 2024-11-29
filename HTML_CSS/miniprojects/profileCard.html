@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        width: 300px;
+        max-width: 100%;
+        /* height: 400px; */
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+      }
+      
+      .container img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid  gray;
+        margin-bottom: 14px;
+      }
+      .text-data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 14px;
+      }
+      #name{
+        font-size: large;
+        font-weight: 700;
+      }
+      #role{
+        font-size: 14px;
+        color: gray;
+      }
+      .media-buttons{
+        font-size: 25px;
+        margin-bottom: 7px;
+      }
+      .fa-facebook{
+        color: rgb(65, 65, 253);
+        margin-left: 7px;
+
+      }
+      .fa-square-instagram{
+        color: rgb(199, 84, 182);
+        margin-left: 7px;
+      }
+      .fa-square-twitter{
+        color: rgb(38, 173, 227);
+        margin-left: 7px;
+      }
+      .fa-youtube{
+        color: red;
+        margin-left: 7px;
+      }
+      button{
+        padding: 7px 14px;
+        border: none;
+        color: white;
+        background-color: rgb(38, 94, 215);
+        border-radius: 15px;
+        margin: 10px;
+      }
+      .data{
+        display: flex;
+        justify-content: space-around;
+        width: 200px;
+        color: gray;
+        margin-top: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="bgc"></div>
+
+      <div class="image">
+        <img
+        src="https://pbs.twimg.com/profile_images/1768318620571205632/5J2IrT2M_400x400.jpg"
+        alt="MSD" class="profile-pic"/>
+      </div>
+
+      <div class="text-data">
+        <span id="name">M S Dhoni</span>
+        <span id="role">Cricketer & Solider</span>
+      </div>
+      
+      <div class="media-buttons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+      <div class="buttons">
+        <button>Subscribe</button>
+        <button>Message</button>
+      </div>
+      <div class="data">
+        <div class="heart">
+          <i class="fa-regular fa-heart"></i>
+          <span class="number">60k</span>
+        </div>
+  
+        <div class="comments">
+          <i class="fa-regular fa-comment"></i>
+          <span class="number">20k</span>
+        </div>
+  
+        <div class="share">
+          <i class="fa-solid fa-share"></i>
+          <span class="number">12k</span>
+        </div> 
+      </div>
+      
+    </div>
+  </body>
+</html>
