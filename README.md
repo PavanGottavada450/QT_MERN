@@ -1,4 +1,3 @@
-
 QT_MERN
 This repository contains a collection of examples and exercises designed to build foundational and advanced web development skills using HTML, CSS, JavaScript, and the MERN stack (MongoDB, Express, React, Node.js).
 
