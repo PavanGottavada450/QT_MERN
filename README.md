@@ -1,4 +1,4 @@
-# QT_HTML-CSS
+# QT_MERN
 
 #### Overview
 This repository contains HTML and CSS examples and exercises, designed to enhance foundational skills in web development. It’s an ideal resource for beginners who want to understand web page structure, styling, and layout techniques.
