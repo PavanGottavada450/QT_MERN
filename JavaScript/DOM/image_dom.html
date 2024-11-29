@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image_DOM</title>
+</head>
+<body>
+    <button id="btn" onclick="change()">button</button>
+    <script>
+
+        function change(){
+            var ID = document.getElementById("btn");
+
+            var img = document.createElement("img");
+            
+            // img.src = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCMlvM2llerg0SKT79eCwHRobNauN1W1blhn3SZeuB0YGqMrxc";
+
+            img.setAttribute("src","https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCMlvM2llerg0SKT79eCwHRobNauN1W1blhn3SZeuB0YGqMrxc")
+
+            ID.append(img);
+        }
+
+    </script>
+</body>
+</html>

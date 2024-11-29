@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="input" placeholder="enter">
+        <button onclick="largestNumber()">click Me</button>
+
+        <p id="output"></p>
+    </div>
+    <script>
+        function largestNumber(){
+        const myInput = document.getElementById("input").value.split(',').map(Number)
+        const output = Math.max(...myInput)
+        document.getElementById("output").textContent = output
+        }
+    </script>
+</body>
+</html>

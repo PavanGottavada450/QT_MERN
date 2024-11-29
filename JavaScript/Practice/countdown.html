@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="input" placeholder="enter">
+        <button id="startButton">click to start</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        const input = document.getElementById("input");
+        const startButton = document.getElementById("startButton");
+        const output = document.getElementById("output");
+
+        let countDown;
+
+        startButton.addEventListener("click",() => {
+            clearInterval(countDown);
+            let seconds = parseInt(input.value);
+            countDown = setInterval (() => {
+                if (seconds <= 0){
+                    clearInterval(countDown);
+                    output.textContent = "Time's Up";
+                }
+                else{
+                    const minutes = Math.floor(seconds/60);
+                    const remainingSeconds = seconds % 60;
+                    output.textContent = (minutes < 10 ? "0" : "") + minutes + ":" + (remainingSeconds < 10 ? "0" : "") + remainingSeconds;
+                    seconds--;
+                }
+            },1000);
+        });
+
+    </script>
+
+</body>
+</html>

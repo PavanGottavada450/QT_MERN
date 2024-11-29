@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quaries</title>
+    <!-- <link rel="stylesheet" href=""> -->
+    <style>
+        #block1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        #block2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        #block3{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+        @media screen and (max-width : 300px){
+            #block1{
+                display : none;
+            }
+        }
+        @media screen and (max-width : 600px){
+            #block2{
+                display : none;
+            }
+        }
+        @media screen and (max-width : 900px){
+            #block3{
+                display : none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="block1"></div>
+    <div id="block2"></div>
+    <div id="block3"></div>
+</body>
+</html>
