@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Click Image Change</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <img src="https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png" 
+    alt="logo" 
+    width="300px" 
+    height="300px"
+    id="image"
+    />
+
+    <button id="react">React</button>
+    <button id="node">Node</button>
+
+
+    <script>
+
+        var img = document.getElementById("image");
+        var reactbtn = document.getElementById("react");
+        var nodebtn = document.getElementById("node");
+
+
+        reactbtn.addEventListener("click", () => {
+            img.src = "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F096baapsqqt9fks0us99.png";
+
+        });
+
+        nodebtn.addEventListener("click",()=>{
+            img.src ="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg";
+        });
+
+    </script>
+</body>
+</html>

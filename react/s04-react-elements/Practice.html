@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>s04-react-elements</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <style>
+      #main {
+        text-align: center;
+        padding: 10px;
+        width: 200px;
+        box-shadow: 0 0 10px black;
+      }
+      #mycontainer {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+        function divElements(username,url){
+            var h1 = React.createElement("h3", null, username);
+            var img = React.createElement("img", {
+                src: url,
+                width: "200px",
+                height: "200px",
+            });
+
+            var div = React.createElement("div", { id: "main"}, img,h1);
+
+            return div
+        }
+
+        function container(){
+
+          var divcontainer = React.createElement("div",{id:"mycontainer"},[
+            divElements(
+              "dhoni",
+              "https://upload.wikimedia.org/wikipedia/commons/d/d5/MS_Dhoni_%28Prabhav_%2723_-_RiGI_2023%29.jpg"
+            ),
+            divElements(
+              "sakshi",
+              "https://i.pinimg.com/564x/74/20/a6/7420a6abc6efb7d5a17e40d38898f145.jpg"
+            ),
+            divElements(
+              "Ziva Sign",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzXO3pwno0q00DsIwTEp1VKiid3RpN9MgaJA&s"
+            )
+          ]);
+
+
+          return divcontainer;
+        }
+
+
+
+      ReactDOM.render(container(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

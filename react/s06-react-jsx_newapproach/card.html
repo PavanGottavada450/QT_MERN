@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Template</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+      }
+      .card {
+        border: 1px solid gray;
+        width: 200px;
+        padding: 5px;
+        text-align: center;
+        box-shadow: 0 0 5px black;
+      }
+      button{
+        margin: 5px;
+      }
+      img{
+        border: 1px solid gray;
+      }
+      .container{
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Card() {
+        return (
+          <div className="card">
+            <img
+              src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/963bd9d0-1196-46e8-a6ac-f52824e3bb42/NIKE+AIR+MAX+IMPACT+4.png"
+              alt="pic"
+              width="200px"
+              height="200px"
+            />
+            <h3>Nike Impact 4</h3>
+            <span>$300</span>
+            <p>
+              Elevate your game and your hops. Charged with Max Air cushioning
+              in the heel.
+            </p>
+            <button>Details</button>
+            <button>Buy Now</button>
+          </div>
+        );
+      }
+
+      function Container(){
+        return <div className="container">
+
+            <Card/>
+            <Card/>
+            <Card/>
+            <Card/>
+
+        </div>
+      }
+
+      ReactDOM.render(<Container />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

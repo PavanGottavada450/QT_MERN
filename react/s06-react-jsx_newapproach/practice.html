@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Template</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+      }
+      .head {
+        background-color: black;
+        color: white;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        padding: 10px;
+      }
+      .foot{
+        padding: 60px;
+        text-align: center;
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Head() {
+        return (
+          <div className="head">
+            <h1>Header</h1>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div className="main">
+            <h1>JavaScript</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto accusamus beatae nostrum sint quod et maiores
+              perferendis quas blanditiis nesciunt labore id aspernatur alias
+              cupiditate eum hic dolore commodi omnis, saepe aliquid a libero?
+              Quidem corporis et deleniti ad quasi, sequi facere sed consequatur
+              adipisci sit. Quos earum non asperiores optio tenetur est fugit
+              accusamus cupiditate dolor neque reiciendis veniam, a, eos
+              molestiae itaque. Deserunt, aliquid. Possimus, fugiat illum. Culpa
+              velit eaque earum cumque praesentium quo repellendus harum sed
+              pariatur quaerat, ducimus voluptatum nostrum iste odio aliquam!
+              Laudantium hic magnam facilis beatae, fugiat dolor officia debitis
+              harum, inventore necessitatibus nobis minima similique obcaecati
+              sit. Assumenda molestias facere rerum laboriosam animi iure
+              doloremque ducimus error officiis itaque unde, minima nulla
+              delectus consectetur mollitia quod! In quo nesciunt suscipit minus
+              eos officia repellendus, blanditiis ut quam quia quasi impedit
+              accusamus? Quasi itaque iste earum commodi, atque distinctio
+              consequuntur accusantium maxime id iusto.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              accusamus vel eos aut ipsum dolore itaque? Quas rerum libero earum
+              corrupti eaque aspernatur, illum quidem atque facere impedit
+              incidunt minus. Eligendi et vero repellat accusantium maiores
+              blanditiis consequatur illo qui sint eum voluptatibus id optio,
+              quam quibusdam ipsum minima dolorem nobis eaque nihil? Suscipit
+              sed deleniti numquam quam officia, eligendi, quo ipsam velit harum
+              praesentium animi tenetur atque, labore quibusdam minima alias
+              accusantium exercitationem neque repellat quidem veniam est.
+              Doloribus placeat aspernatur commodi, a explicabo ex provident
+              magni veritatis repudiandae illo rem maxime eaque, enim officia
+              consectetur quis corrupti beatae ad vitae voluptatum ipsam quod
+              assumenda praesentium iste? Aperiam cum unde dignissimos deserunt
+              ut sapiente, velit facilis optio porro eligendi, deleniti
+              voluptatibus. Suscipit, cupiditate vitae nobis qui adipisci ipsum
+              quae quia odio magnam minima vel obcaecati consequatur veritatis a
+              nesciunt assumenda maiores iusto doloribus fugiat, facere atque
+              ipsam officiis provident?
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+              accusamus vel eos aut ipsum dolore itaque? Quas rerum libero earum
+              corrupti eaque aspernatur, illum quidem atque facere impedit
+              incidunt minus. Eligendi et vero repellat accusantium maiores
+              blanditiis consequatur illo qui sint eum voluptatibus id optio,
+              quam quibusdam ipsum minima dolorem nobis eaque nihil? Suscipit
+              sed deleniti numquam quam officia, eligendi, quo ipsam velit harum
+              praesentium animi tenetur atque, labore quibusdam minima alias
+              accusantium exercitationem neque repellat quidem veniam est.
+              Doloribus placeat aspernatur commodi, a explicabo ex provident
+              magni veritatis repudiandae illo rem maxime eaque, enim officia
+              consectetur quis corrupti beatae ad vitae voluptatum ipsam quod
+              assumenda praesentium iste? Aperiam cum unde dignissimos deserunt
+              ut sapiente, velit facilis optio porro eligendi, deleniti
+              voluptatibus. Suscipit, cupiditate vitae nobis qui adipisci ipsum
+              quae quia odio magnam minima vel obcaecati consequatur veritatis a
+              nesciunt assumenda maiores iusto doloribus fugiat, facere atque
+              ipsam officiis provident?
+            </p>
+          </div>
+        );
+      }
+
+      function Foot() {
+        return (
+          <div className="foot">
+            <h1>Footer</h1><br/>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+              rerum minima fugiat ducimus eius impedit, dicta ullam. Assumenda
+              libero eaque nulla quia ullam neque ducimus numquam tenetur, illo
+              nemo quidem reprehenderit, officia culpa quam molestias quos
+              laboriosam vero voluptatem placeat animi earum impedit. Hic
+              consectetur debitis aut deserunt a culpa doloribus sunt magnam
+              quae dolorem non nihil repellendus voluptate soluta, cumque,
+              fugiat autem sed ut officia modi? Cum, rerum! Sunt rem odit
+              dignissimos repellat omnis similique accusantium eos suscipit
+              labore? Nulla culpa quam labore voluptatum odit nostrum corporis,
+              nesciunt illum facere illo quis consectetur alias voluptatibus
+              deleniti velit! Ut, dicta!
+            </p>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Head />
+            <Main />
+            <Foot />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>react-elements</title>
+    <script  src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script  src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <script>
+
+        var btn = React.createElement("button",null,"React button");
+
+        var h1 = React.createElement("h1",null,"heading1");
+        var h2 = React.createElement("h2",null,"heading2");
+        var h3 = React.createElement("h3",null,"heading3");
+        var h4 = React.createElement("h4",null,"heading4");
+        var h5 = React.createElement("h5",null,"heading5");
+        var h6 = React.createElement("h6",null,"heading6");
+
+        var p = React.createElement("p",null,"paragraph");
+
+        var container = React.createElement("div",null,btn,h1,h2,h3,h4,h5,h6,p);
+
+        ReactDOM.render(container,document.querySelector("body"));
+
+
+    </script>
+</body>
+</html>

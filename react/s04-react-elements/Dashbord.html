@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB Development Dashboard</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <style>
+        #HtmlDiv{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid gray;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 0 0 3px black;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script>
+
+        function container(H1,PARA,SRC){
+
+        var h1 = React.createElement("h1",null,H1);
+        var p = React.createElement("p",null,PARA);
+
+        var htmlEle = React.createElement("div",null,h1,p);
+
+        var img = React.createElement("img",{
+            src:SRC,
+            width:"150",
+            height:"180",
+        });
+
+        var HtmlDiv = React.createElement("div",{id:"HtmlDiv"},htmlEle,img);
+
+        return HtmlDiv;
+        }
+
+
+        function divcontainer(){
+
+            var divcontainer = React.createElement("div",null,[
+                container(
+                    "HTML",
+                    "HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s",
+                ),
+                container(
+                    "CSS",
+                    "CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages (HTML or XML). This language contains coding elements and is composed of these “cascading style sheets” which are equally called CSS files ",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5ryTY9VShCV5uJWhoBXkcxxlFB8O5bbxGA&s",
+                ),
+                container(
+                    "JavaScript",
+                    "What Is JavaScript? JavaScript (JS) is a cross-platform, object-oriented programming language used by developers to make web pages interactive. It allows developers to create dynamically updating content, use animations, pop-up menus, clickable buttons, control multimedia, etc.",
+                    "https://seeklogo.com/images/J/javascript-logo-E967E87D74-seeklogo.com.png",
+                )
+            ]);
+
+            return divcontainer;
+        }
+     
+
+        ReactDOM.render(divcontainer(),document.getElementById("root"));
+
+
+    </script>
+</body>
+</html>

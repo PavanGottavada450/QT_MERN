@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Template</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function imageContainer(SRC){
+
+            var img = React.createElement("img",{
+            src : SRC,
+            width : "300px",
+            height : "300px"
+        });
+        
+
+        var reactBtn = React.createElement("button",{
+            id:"btn",
+            onClick : react,
+        },"React");
+
+
+        function react(){
+            return imageContainer("https://pbs.twimg.com/profile_images/1785867863191932928/EpOqfO6d_400x400.png");
+        }
+
+        var nodeBtn = React.createElement("button",{
+            id : "btn",
+            onClick : node,
+        },"Node");
+
+        function node(SRC){
+            return imageContainer("https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg");
+        }
+
+
+        var container = React.createElement("div",null,img,reactBtn,nodeBtn);
+
+        ReactDOM.render(container,document.getElementById("root"));
+
+
+        }
+
+        imageContainer("https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg");
+
+
+
+    </script>
+</body>
+</html>
