@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked Property</title>
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">Subscribe</label>
+    <br>
+    <input type="radio" id="Visa" name="payment">
+    <label for="Visa">Visa</label>
+    <br>
+    <input type="radio" id="MasterCard" name="payment">
+    <label for="MasterCard">MasterCard</label>
+    <br>
+    <input type="radio" id="PayPal" name="payment">
+    <label for="PayPal">PayPal</label>
+    <br><br>
+    <button id="submit">Submit</button>
+    <br>
+    <p id="result"></p>
+    <p id="result2"></p>
+
+
+
+
+    <script>
+        let checkbox = document.getElementById("check");
+        let submitBtn = document.getElementById("submit");
+        let result = document.getElementById("result");
+        let result2 = document.getElementById("result2");
+        let Visa = document.getElementById("Visa");
+        let MasterCard = document.getElementById("MasterCard");
+        let PayPal = document.getElementById("PayPal");
+
+        submitBtn.onclick = function(){
+            if(checkbox.checked){
+                result.textContent = "Thank You For Subscribe";
+            }
+            else{
+                result.textContent = "Please Subscribe";
+            }
+
+            if(Visa.checked){
+                result2.textContent = "You Choose Visa";
+            }
+            else if(MasterCard.checked){
+                result2.textContent = "You Choose MasterCard";
+            }
+            else if(PayPal.checked){
+                result2.textContent = "You Choose PayPal";
+            }
+            else{
+                result2.textContent = "Please Choose any one of the Payment";
+            }
+        }
+
+        
+    </script>
+</body>
+</html>

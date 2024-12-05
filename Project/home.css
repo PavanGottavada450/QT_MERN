@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    height: 80px;
+}
+#brand{
+    width: 30%;
+}
+#brand h1{
+    color: #fff;
+    font-size: 37px;
+}
+#brand h1:hover{
+    color: green;
+    font-size: 42px;
+}
+#links{
+    width: 50%;
+}
+#logos{
+    width: 20%;
+}
+.myflex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#links a{
+    text-decoration: none;
+    margin-right: 50px;
+    color: #fff;
+    font-size: 18px;
+}
+#logos a{
+    text-decoration: none;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+#links a:hover,
+#logos a:hover{
+    color: green;
+    font-weight: bold;
+    font-size: 19px;
+}

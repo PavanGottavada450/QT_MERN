@@ -1,0 +1,27 @@
+.container {
+  width: 1000px;
+  height: 400px;
+  margin: 60px auto;
+  display: flex;
+  box-shadow: 0 0 5px black;
+}
+.dark {
+  background-color: #232222;
+  color: white;
+}
+.light {
+  background-color: #f5f3f3;
+  color: black;
+}
+.left {
+  width: 30%;
+}
+.right {
+  width: 70%;
+  padding: 10px;
+}
+button {
+  margin-right: 10px;
+  padding: 5px 30px;
+}
+
