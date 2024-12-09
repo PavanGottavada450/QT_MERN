@@ -8,29 +8,25 @@
 <body>
     <div>
         <input type="text" id="input" placeholder="enter">
-        <button onclick="captalize()">enter</button><br>
+        <button id="button" >enter</button><br>
         <p id="result"></p>
     </div>
 
     <script>
-        // function captalize(){
-        // const inputValue = document.getElementById("input").value
-        // const captalize = inputValue.toUpperCase()
-        // document.getElementById("result").textContent = captalize
-        // }
 
-        function firstCaptial(mango){
-            return mango.charAt(0).toUpperCase() + mango.slice(1).toLowerCase()
-        }
+        const button = document.getElementById("button");
+        const result = document.getElementById("result");
 
-        function captalize(){
-            const inputValue = document.getElementById("input").value
-            const mySplit = inputValue.split(' ')
-            const myMap = mySplit.map(firstCaptial)
-            const output = myMap.join(' ')
+        button.addEventListener('click', () => {
+            const inputValue = document.getElementById("input").value.trim();
+            if (inputValue) {
+                const output = inputValue.charAt(0).toUpperCase() + inputValue.slice(1).toLowerCase();
+                result.textContent = output;
+            } else {
+                result.textContent = "Please enter a valid input.";
+            }
+        });
 
-            document.getElementById("result").textContent = output 
-        }
     </script>
 </body>
 </html>
