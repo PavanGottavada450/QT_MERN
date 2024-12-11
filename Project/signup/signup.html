@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginFrom</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh; /* 100% of the viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: black;
+        }
+
+        #from{
+            width: 800px;
+            height: 500px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: skyblue;
+            box-shadow: 0 0 20px rgb(0, 51, 255);
+        }
+
+        #from img{
+            margin-top: 4px;
+            border-radius: 20px 0px 0px 20px; 
+        }
+
+        #login_from{
+            border: 1px solid black;
+            border-radius: 0px 20px 20px 0px;
+            width: 400px;
+            height: 500px;
+            padding: 20px;
+        }
+
+        #login_from h1{
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .input_box{
+            border: 1px solid rgb(159, 156, 156);
+            width: 250px;
+            height: 22px;
+            margin: 10px;
+            margin-left: 20px;
+        }
+
+        #login_from label{
+            margin: 20px;
+            font-size: 15px;
+        }
+        
+       
+        #login_from a{
+            margin-left: 40px;
+        }
+ 
+        #login_from p{
+            display: inline;
+            font-size: 15px;
+        }
+
+        #check_box,h2{
+            margin-left: 20px;
+        }
+
+        #login_from button{
+            padding: 8px 30px;
+            background-color: rgb(61, 104, 245);
+            border: none;
+            border-radius: 3px;
+            color: white;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #login_from #buttons{
+            display: flex;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="from">
+        
+        <div class="image">
+            <img src="https://cdn-image.tongkolspace.com/@futureskills/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-26-09.09.49-Vector-illustration-of-an-individual-engrossed-in-shopping-on-their-smartphone-with-vibrant-social-media-icons-like-Facebook-Instagram-and-Twitter-730x730.png" alt="Itachi_pic" width="100%" height="500px">
+        </div>
+
+        <div id="login_from">
+            <h1>SignUp From</h1>
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" required class="input_box"><br>
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" required class="input_box"><br>
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" required class="input_box"><br>
+            <label for="cpass">Confirm Password:</label><br>
+            <input type="password" id="cpass" required class="input_box"><br>
+            <input type="checkbox" required id="check_box">
+            <p>By siging up,you agree to the <br><a href="">Play Term of Service</a></p><br>
+
+            <div id="buttons">
+                <a href="/home/home.html"><button>Sign Up</button></a>
+                <a href="/login/login.html"><button>Sign In</button></a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -118,7 +118,7 @@ main {
 
 #logos button:hover {
   background-color: red;
-  border: none;
+  border: 3px solid red;
   color: white;
 }
 
@@ -146,7 +146,7 @@ main {
 
 .content button {
   padding: 7px 34px;
-  border: 3px solid blue;
+  border: 5px solid blue;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
   font-size: 22px;

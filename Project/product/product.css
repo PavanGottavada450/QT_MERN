@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+  }
+  
+body {
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: black;
+  }
+  
+header {
+    height: 13%;
+    display: flex;
+  }
+  
+main {
+    height: 87%;
+  }
+  
+  #homeHeader #brand {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #brand h1 {
+    color: white;
+    font-size: 37px;
+    cursor: pointer;
+  }
+  
+  #homeHeader #links {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #brand h1:hover {
+    color: blue;
+    transform: scale(1.3);
+    transition: 1s;
+  }
+  
+  #links a {
+    text-decoration: none;
+    margin-right: 50px;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  #links a:hover,
+  #logos a:hover {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  #links a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color: red;
+    bottom: -7px;
+    left: 0;
+  }
+  
+  #links a:hover::after {
+    width: 100%;
+    transition: 0.5s;
+  }
+  
+  #homeHeader #logos {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #logos a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  #logos button {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px 20px;
+    border: 3px solid blue;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #logos button:hover {
+    background-color: red;
+    border: 3px solid red;
+    color: white;
+  }
+  
+  #productBgImage{
+    width: 1450px;
+    height: 300px;
+    margin: 50px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    box-shadow: 0 0 10px rgb(0, 30, 255);
+    animation: changeBackground 6s infinite;
+  }
+
+  @keyframes changeBackground {
+    0%{
+      background-image: url("https://www.shutterstock.com/image-photo/ecommerce-add-cart-online-shopping-600nw-1139994800.jpg");
+    }
+    33% {
+      background-image: url("https://www.ashramtech.com/wp-content/uploads/2016/09/ecommerce-retail-ss-1920.jpg");
+    }
+    66% {
+      background-image: url("https://png.pngtree.com/background/20240719/original/pngtree-online-shopping-and-e-commerce-3d-illustration-of-computer-with-credit-picture-image_9768362.jpg");
+    }
+    100% {
+      background-image: url("https://www.shutterstock.com/image-photo/ecommerce-add-cart-online-shopping-600nw-1139994800.jpg");
+    }
+  }
+
+  .productBanner{
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #categories{
+    color: #fff;
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #cards{
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .card{
+    width: 260px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(0, 85, 255);
+    border-radius: 5px;
+  }
+
+  .card h3,p {
+    margin-bottom: 10px;
+  }
+
+  .card img{
+    border-radius: 5px;
+    width:220px; 
+    height:220px;
+  }
+
+  .card button {
+    padding: 4px 7px;
+    font-weight: bold;
+    color: #fff;
+    background: none;
+  }
+
+  .card button:nth-last-of-type(2){
+    border: 2px solid blue;
+  }
+
+  .card button:nth-last-of-type(2):hover{
+    background-color: blue;
+  }
+
+  .card button:nth-last-of-type(1){
+    border: 2px solid red;
+  }
+
+  .card button:nth-last-of-type(1):hover{
+    background-color: red;
+  }
