@@ -13,7 +13,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: black;
+            background-image: linear-gradient(rgb(0, 102, 255),rgb(211, 130, 238));
             color: black;
         }
 
@@ -25,7 +25,7 @@
             align-items: center;
             justify-content: center;
             background-color: skyblue;
-            box-shadow: 0 0 20px rgb(0, 51, 255);
+            box-shadow: 0 0 20px black;
         }
 
         #from img{
@@ -34,7 +34,6 @@
         }
 
         #login_from{
-            border: 1px solid black;
             border-radius: 0px 20px 20px 0px;
             width: 400px;
             height: 500px;
@@ -99,17 +98,17 @@
         </div>
 
         <div id="login_from">
-            <h1>SignUp From</h1>
-            <label for="fname">Full Name:</label><br>
+            <h1>SignUp Form</h1>
+            <label for="fname">Name:</label><br>
             <input type="text" id="fname" required class="input_box"><br>
-            <label for="email">Your Email:</label><br>
+            <label for="email">Email Id:</label><br>
             <input type="email" id="email" required class="input_box"><br>
             <label for="pass">Password:</label><br>
             <input type="password" id="pass" required class="input_box"><br>
             <label for="cpass">Confirm Password:</label><br>
             <input type="password" id="cpass" required class="input_box"><br>
             <input type="checkbox" required id="check_box">
-            <p>By siging up,you agree to the <br><a href="">Play Term of Service</a></p><br>
+            <p>By siging up,you agree to the <br><a href="https://play.google.com/about/play-terms/">Play Term of Service</a></p><br>
 
             <div id="buttons">
                 <a href="/home/home.html"><button>Sign Up</button></a>

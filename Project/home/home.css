@@ -50,6 +50,10 @@ main {
   cursor: pointer;
 }
 
+#brand a{
+  text-decoration: none;
+}
+
 #homeHeader #links {
   width: 50%;
   display: flex;

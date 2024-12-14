@@ -7,10 +7,9 @@
   
   body {
     height: 100vh;
-    overflow: hidden;
-    background-image: linear-gradient(blue,violet);
   }
- 
+  
+  
   header {
     height: 13%;
     display: flex;
@@ -33,7 +32,7 @@
     font-size: 37px;
     cursor: pointer;
   }
-
+  
   #brand a{
     text-decoration: none;
   }
@@ -110,43 +109,32 @@
     color: white;
   }
   
-  #profileContainer {
-    width: 800px;
-    height: 450px;
-    margin: 90px auto;
-    display: flex;
-    box-shadow: 0 0 20px black;
-    border-radius: 10px;
+  main{
+    width: 90%;
+    margin: 30px auto;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+    gap: 10px;
   }
 
-  #profileLeftPanel{
-    width: 40%;
-    border-radius: 10px 0 0 10px;
-  }
-  #profileLeftPanel img{
-    border-radius: 10px 0 0 10px;
-  }
-  #profileRightPanel{
-    width: 60%;
-    color: white;
-    padding: 50px;
-    background-color: black;
-    border-radius: 0 10px 10px 0;
+  #cartproduct{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+    padding: 10px;
+    border: 2px solid black;
   }
 
-  #profileRightPanel dd{
-    margin-bottom: 20px;
+  #cartamount{
+    background-color: green;
+    border: 2px solid black;
   }
 
-  #profileRightPanel button{
-    border: 3px solid blue;
-    background-color: black;
-    color: #fff;
-    padding: 7px 25px;
-    border-radius: 5px;
+  #cartproduct i {
+    font-size: 20px;
   }
 
-  #profileRightPanel button:hover{
-    border: 3px solid blue;
-    background-color: blue;
-  }
+  

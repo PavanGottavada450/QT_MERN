@@ -5,19 +5,19 @@
     font-family: cursive;
   }
   
-  body {
+body {
     height: 100vh;
     overflow: hidden;
-    background-image: linear-gradient(blue,violet);
+    background-image: linear-gradient(rgb(0, 76, 255),violet);
   }
- 
-  header {
+  
+header {
     height: 13%;
     display: flex;
     background-color: black;
   }
   
-  main {
+main {
     height: 87%;
   }
   
@@ -33,7 +33,7 @@
     font-size: 37px;
     cursor: pointer;
   }
-
+  
   #brand a{
     text-decoration: none;
   }
@@ -110,43 +110,36 @@
     color: white;
   }
   
-  #profileContainer {
-    width: 800px;
-    height: 450px;
-    margin: 90px auto;
-    display: flex;
-    box-shadow: 0 0 20px black;
+  #contactContainer{
+    width: 600px;
+    height: 570px;
+    background-color: lightskyblue;
+    margin: 40px auto;
+    text-align: center;
+    padding: 40px;
     border-radius: 10px;
+    box-shadow: 0 0 10px black;
   }
 
-  #profileLeftPanel{
-    width: 40%;
-    border-radius: 10px 0 0 10px;
-  }
-  #profileLeftPanel img{
-    border-radius: 10px 0 0 10px;
-  }
-  #profileRightPanel{
-    width: 60%;
-    color: white;
-    padding: 50px;
-    background-color: black;
-    border-radius: 0 10px 10px 0;
-  }
-
-  #profileRightPanel dd{
-    margin-bottom: 20px;
-  }
-
-  #profileRightPanel button{
-    border: 3px solid blue;
-    background-color: black;
-    color: #fff;
-    padding: 7px 25px;
+  #contactContainer input{
+    padding: 16px;
     border-radius: 5px;
+    border: 2px solid gray;
+    font-size: 16px;
+    margin-bottom: 19px;
+    width: 200px;
   }
 
-  #profileRightPanel button:hover{
-    border: 3px solid blue;
-    background-color: blue;
+  #contactContainer .inputBox{
+    width: 410px;
+  }
+
+  #contactContainer button{
+    padding: 13px 180px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(0, 110, 255);
+    border: none;
+    border-radius: 5px;
+    color: white;
   }
