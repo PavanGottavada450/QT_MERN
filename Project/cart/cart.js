@@ -1,3 +1,3 @@
-function getAllProducts(){
-    alert("on working");
-}
+// function getAllProducts(){
+//     alert("on working");
+// }
