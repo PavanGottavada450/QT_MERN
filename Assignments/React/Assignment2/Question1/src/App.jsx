@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Counter />
+      <Counter/>
     </div>
   );
 }
