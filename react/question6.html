@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React Template</title>
+    <title>question6</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -12,7 +12,15 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        
+        function Heading(){
+            return (
+                <div>
+                    <h1>Welcome to React!</h1>
+                </div>
+            )
+        }
+
+        ReactDOM.render(Heading(),document.querySelector("body"));
     </script>
 </body>
 </html>

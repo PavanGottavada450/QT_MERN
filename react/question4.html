@@ -9,12 +9,13 @@
 </head>
 <body>
     <script>
-        let image = React.createElement("img",{
-            src : "https://via.placeholder.com/150",
-            alt : "placeholder Image"
-        });
+       function dynamic(tagName,textContent){
+            let element = React.createElement(tagName,null,textContent);
+        
+            return element;
+       }
 
-        ReactDOM.render(image,document.querySelector("body"));
+       ReactDOM.render(dynamic("h1","Dynamic Heading"),document.querySelector("body"));
     </script>
 </body>
 </html>
