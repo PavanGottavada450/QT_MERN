@@ -1,0 +1,6 @@
+#card{
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 0 10px black;
+    border-radius: 7px;
+}
