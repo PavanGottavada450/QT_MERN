@@ -1,0 +1,17 @@
+.counter{
+    border: 2px solid gray;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px black;
+    text-align: center;
+}
+.counter h2{
+    font-size: 50px;
+}
+.counter button{
+    margin: 5px;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
