@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div id="container">
+      <ol id="container">
         {profiles.map((profile, index)=>(
           <Profiles 
             key={index}
@@ -23,7 +23,7 @@ function App() {
             id={profile.id}
           />
         ))}
-      </div>
+      </ol>
     </div>
   );
 }
