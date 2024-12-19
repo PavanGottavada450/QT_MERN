@@ -5,3 +5,8 @@
   text-align: center;
 } */
 
+#container{
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+}

@@ -1,18 +1,22 @@
 // import { useState } from "react"
 
-function Timer(){
+import { useState } from "react";
 
+function Timer() {
+  const [timer, setTimer] = useState(5);
 
+  const handleTimer = () => {
+    setInterval(() => {
+      setTimer((prev) => prev - 1);
+    }, 1000);
+  };
 
-    return (
-        <div id="container">
-            <h1>Countdown Timer</h1>
-            <h1></h1>
-
-            <input type="text" />
-            <button > Start</button>
-        </div>
-    )
+  return (
+    <div>
+      <h1>{timer}</h1>
+      <button onClick={handleTimer}>Click</button>
+    </div>
+  );
 }
 
 export default Timer;

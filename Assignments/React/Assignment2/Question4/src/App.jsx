@@ -17,9 +17,10 @@ function App() {
         {profiles.map((profile, index)=>(
           <ProfileCard 
           key={index}
-          name={profile.name}
-          age={profile.age}
-          bio={profile.bio}
+          // name={profile.name}
+          // age={profile.age}
+          // bio={profile.bio}
+          profile={profile}
         />
         ))}
       </div>

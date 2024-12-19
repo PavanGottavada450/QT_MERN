@@ -4,8 +4,3 @@
   padding: 2rem;
   text-align: center;
 } */
-#container{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
-}
