@@ -1,0 +1,23 @@
+#container{
+    text-align: center;
+    padding: 20px;
+}
+
+#container h1,p{
+    margin-bottom: 20px;
+}
+#containerCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+.filter{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.filter select{
+    padding: 10px 30px;
+}
+
