@@ -21,3 +21,9 @@
     padding: 10px 30px;
 }
 
+.dropDown{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin: auto;
+}
