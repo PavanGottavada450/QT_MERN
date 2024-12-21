@@ -1,0 +1,14 @@
+#Banner{
+    width: 1450px;
+    height: 300px;
+    box-shadow: 0 0 10px black;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+#productsDataContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
