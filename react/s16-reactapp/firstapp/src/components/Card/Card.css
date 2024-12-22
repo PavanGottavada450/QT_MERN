@@ -2,12 +2,8 @@
     width: 270px;
     background-color: black;
     color: white;
-    height: 380px;
     box-shadow: 0 0 10px red;
     margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     padding: 10px;
     text-align: center;
   }
