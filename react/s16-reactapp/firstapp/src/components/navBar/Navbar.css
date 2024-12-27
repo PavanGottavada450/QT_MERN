@@ -27,14 +27,14 @@
     font-size: 20px;
 }
 #nav-container #anchors a{
-    margin-left: 30px;
+    margin-left: 50px;
     text-decoration: none;
     color: white;
 }
 #nav-container #anchors a:hover{
     color: blue;
 }
-#nav-container #logos{
+/* #nav-container #logos{
     width: 20%;
     display: flex;
     justify-content: center;
@@ -47,9 +47,12 @@
     color: white;
 }
 #nav-container #logos a:hover{
-    color: blue;
+    color: blue; */
+#nav-container #button{
+    width: 20%;
+    text-align: end;
 }
-#nav-container #logos button{
+#nav-container #button button{
     padding: 4px 15px;
     color: white;
     background-color: red;
@@ -57,4 +60,5 @@
     border-radius: 2px;
     font-size: 15px;
     font-weight: bold;
+    margin-right: 30px;
 }

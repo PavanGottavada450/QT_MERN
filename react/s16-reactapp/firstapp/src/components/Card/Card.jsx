@@ -4,7 +4,7 @@ import {Link} from "react-router-dom"
 
 function Card({data}) {
 
-  const {image, title, price, rating } = data;
+  const {image, title, price, rating, id } = data;
 
   return (
     <div className="card">
@@ -14,7 +14,7 @@ function Card({data}) {
         <p>Rating : {rating.rate}⭐</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
         <div style={{display: "flex", justifyContent: "space-evenly"}}>
-        <Link to={"/productdetails"} >
+        <Link to={`/productdetails/${id}`} >
           <button>Product Details</button>
         </Link>
         

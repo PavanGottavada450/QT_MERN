@@ -15,11 +15,10 @@ function Navbar() {
             <Link to="/electronics">Electronics</Link>
             <Link to="/jewelery">Jewelery</Link>
             <Link to="/profile">Profile</Link>
+            
         </div>
-        <div id="logos">
-            <Link to="">Cart</Link>
-            <Link to="">Fav</Link>
-            <button>Logout</button>
+        <div id="button">
+          <button>Logout</button>
         </div>
         
     </div>
