@@ -1,0 +1,10 @@
+.container{
+    width: 400px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.container img{
+    border-radius: 5px;
+}

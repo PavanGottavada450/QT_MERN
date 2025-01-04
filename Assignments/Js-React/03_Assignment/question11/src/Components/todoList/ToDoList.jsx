@@ -1,45 +1,95 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+
+// function ToDoList() {
+//   const [newTask, setNewTask] = useState("");
+//   const [tasks, setTasks] = useState([]);
+  
+//   const handleInputChange = (event) =>{
+//     setNewTask(event.target.value);
+//   };
+
+//   const handleAddTask = () =>{
+//     if(newTask.trim() !== ''){
+//       setTasks([...tasks,newTask]);
+//       setNewTask('');
+//     }
+//   };
+
+//   const deleteTask = (taskDelete) => {
+//     const updatedTask = tasks.filter((task) => task !== taskDelete);
+//     setTasks(updatedTask);
+//   };
+
+//   return (
+//     <div className="container">
+//       <input
+//         type="text"
+//         placeholder="enter a task"
+//         value={newTask}
+//         onChange={handleInputChange}
+//       />
+
+//       <button onClick={handleAddTask}>Add Task</button>
+
+//       <ul>
+//         {tasks.map((task,index) => (
+//           <li key={index}>
+//             {task}
+//             <button onClick={() => deleteTask(task)}>Delete</button>
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
+
+// export default ToDoList;
+
+import React, { useState } from 'react'
 
 function ToDoList() {
-  const [tasks, setTasks] = useState([]);
-  const [newTask, setNewTask] = useState("");
 
-  const handleAddTask = () =>{
+  const [newTask, setNewTask] = useState('');
+  const [tasks,setTasks] = useState([]);
+
+  const inputHandler = (event) =>{
+    setNewTask(event.target.value)
+  }
+
+  const AddTaskHandler = () =>{
     if(newTask.trim() !== ''){
-      setTasks([...tasks,newTask]);
-      setNewTask('');
+      setTasks([...tasks,newTask])
+      setNewTask('')
     }
-  };
+  }
 
-  const handleInputChange = (event) =>{
-    setNewTask(event.target.value);
-  };
-
-  const deleteTask = (taskDelete) => {
-    const updatedTask = tasks.filter((task) => task !== taskDelete);
-    setTasks(updatedTask);
-  };
+  const deleteTask = (task) =>{
+    const updatedTasks = tasks.filter((Element) => Element !== task);
+    setTasks(updatedTasks);
+  }
 
   return (
-    <div className="container">
-      <input
+    <div>
+      <input 
         type="text"
-        placeholder="enter a task"
+        placeholder='Enter task'
         value={newTask}
-        onChange={handleInputChange}
+        onChange={inputHandler} 
       />
-      <button onClick={handleAddTask}>Add Task</button>
+
+      <button onClick={AddTaskHandler}>Add Task</button>
 
       <ul>
-        {tasks.map((task,index) => (
+        {tasks.map((task,index) =>(
           <li key={index}>
             {task}
-            <button onClick={() => deleteTask(task)}>Delete</button>
+            <button onClick={() =>deleteTask(task)}>Delete</button>
           </li>
+          
         ))}
       </ul>
     </div>
-  );
+  )
 }
 
-export default ToDoList;
+export default ToDoList
