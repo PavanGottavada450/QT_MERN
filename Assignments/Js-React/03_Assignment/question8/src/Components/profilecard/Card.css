@@ -1,0 +1,10 @@
+.card{
+    width: 280px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    
+}
+.card .info{
+    text-align: left;
+}

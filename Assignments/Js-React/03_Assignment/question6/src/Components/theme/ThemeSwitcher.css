@@ -1,0 +1,33 @@
+.container {
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container.light {
+    background-color: white;
+    color: black;
+  }
+  
+  .container.dark {
+    background-color: black;
+    color: white;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button#light-btn {
+    background-color: #f0f0f0;
+    color: black;
+  }
+  
+  button#dark-btn {
+    background-color: #333;
+    color: white;
+  }
+  
