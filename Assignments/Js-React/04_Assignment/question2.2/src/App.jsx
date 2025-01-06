@@ -1,11 +1,11 @@
 import "./App.css";
-import FilteredList from "./Components/FilteredList";
+import CapitalizeWords from "./Components/CapitalizeWords";
 
 function App() {
 
   return (
     <div>
-      <FilteredList numbers={[1, 3, 7, 9, 2]} />
+      <CapitalizeWords words={['react', 'javascript', 'html']} />
     </div>
   );
 }
