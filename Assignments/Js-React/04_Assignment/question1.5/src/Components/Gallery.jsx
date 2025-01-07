@@ -1,20 +1,21 @@
-import React from 'react'
+import React from "react";
 
-function Gallery({images}) {
+function Gallery({ images }) {
   return (
     <div>
-        <ul>
-            {images.map((Element, index) => (
-                <img src={Element} 
-                alt="" 
-                key={index} 
-                width={"200px"} 
-                height={"200px"}
-                />
-            ))}
-        </ul>
+      <ul>
+        {images.map((element, index) => (
+          <img
+            src={element}
+            alt=""
+            key={index}
+            width={"200px"}
+            height={"200px"}
+          />
+        ))}
+      </ul>
     </div>
-  )
+  );
 }
 
-export default Gallery
+export default Gallery;

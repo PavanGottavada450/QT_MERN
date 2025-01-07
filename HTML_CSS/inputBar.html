@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Bar Style</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .input-wrapper{
+            position: relative;
+            margin: 50px;
+        }
+        label{
+            font-weight: bold;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            background: #fff;
+            padding: 0px 5px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        input{
+            width: 250px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input:focus+label {
+            transform:  translateY(-20px);
+            color: #0051ff;
+        }
+        input:focus{
+            border-color: #0051ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="input-wrapper">
+        <input type="text" id="first-name" required>
+        <label for="first-name">First Name</label>
+    </div>
+</body>
+</html>
