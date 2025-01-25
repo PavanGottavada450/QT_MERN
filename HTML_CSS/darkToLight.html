@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode Toggle</title>
+    <style>
+      /* styles.css */
+
+      /* Define the default theme (light mode) */
+      :root {
+        --background-color: #ffffff;
+        --text-color: #000000;
+      }
+
+      /* Define the dark mode theme */
+      body.dark-mode {
+        --background-color: #121212;
+        --text-color: #ffffff;
+      }
+
+      /* Apply the theme variables */
+      body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      button {
+        margin: 20px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      .content {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+
+    <div class="content">
+      <h1>Welcome to My Website</h1>
+      <p>This is an example of implementing dark mode and light mode.</p>
+    </div>
+
+    <script>
+      // script.js
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.getElementById("theme-toggle");
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme === "dark") {
+          document.body.classList.add("dark-mode");
+        }
+
+        toggleButton.addEventListener("click", () => {
+          document.body.classList.toggle("dark-mode");
+
+          let theme = "light";
+          if (document.body.classList.contains("dark-mode")) {
+            theme = "dark";
+          }
+
+          localStorage.setItem("theme", theme);
+        });
+      });
+    </script>
+  </body>
+</html>
