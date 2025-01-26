@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgray;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container{
+            width: 500px;
+            height: 500px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background-color: red;
+            position: fixed;
+            margin: 0;
+            
+        }
+        .sub1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+        }
+        .sub2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sub1"></div>
+        <div class="sub2"></div>
+    </div>
+</body>
+</html>
