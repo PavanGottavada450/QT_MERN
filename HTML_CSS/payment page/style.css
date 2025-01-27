@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    height: 100vh;
+    margin: 0;
+}
+
+.payment-card{
+    height: fit-content;
+    width: fit-content;
+    padding: 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.payment-card .title{
+    font-size: 13px;
+    font-weight: 500;
+}
+.payment-card .input-group{
+    display: flex;
+    grid-gap: 20px;
+    position: relative;
+}
+.payment-card .input-group input{
+    outline: none;
+    height: 30px;
+    transition: .5s;
+    border: 0;
+    border-bottom: 2px solid darkgray;
+}
+.payment-card .input-group input::placeholder{
+    transition: .6s;
+}
+.payment-card .input-group input:focus::placeholder{
+    font-size: 10px;
+}
+.payment-card .input-group input.bi{
+    width: 100px;
+    margin-top: 20px;
+}
+.payment-card .button{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.payment-card .button button{
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 10px;
+}
+.payment-card .button button.active{
+    color: #fff;
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 762px){
+    .payment-card{
+        height: fit-content;
+        width: 90%;
+    }
+    .payment-card input{
+        width: 100%;
+    }
+    .responsive{
+        flex-direction: column;
+    }
+    .responsive input{
+        width: 100% !important;
+
+    }
+}
