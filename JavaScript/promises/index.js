@@ -1,3 +1,10 @@
+// Promise = An Object that manages asychronous operatins.
+//           Wrap a promise Object around {asynchrounous code}
+//           "I promise to return a value"
+//           PENDING -> RESOLVED or REJECTED
+//           new Promise ((resolve,reject) => {asynchronous code})
+
+
 function walkDog() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
