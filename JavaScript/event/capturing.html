@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .parent {
+        border: 2px solid green;
+        width: 800px;
+        height: 400px;
+        padding: 50px;
+      }
+      .child {
+        border: 2px solid red;
+        width: 500px;
+        height: 300px;
+        padding: 50px;
+      }
+    </style>
+    <script>
+      function fnButton(event) {
+        alert("Button is clicked");
+        // event.stopPropagation(); 
+      }
+
+      function fnChild(event) {
+        alert("Child div is clicked");
+        // event.stopPropagation(); 
+      }
+
+      function fnParent(event) {
+        alert("Parent div is clicked");
+        // event.stopPropagation(); 
+      }
+
+      function fnHTML(event) {
+        alert("HTML is clicked");
+        // event.stopPropagation(); 
+      }
+
+      function fn() {
+        var btn = document.querySelector("button"); 
+        btn.addEventListener("click", fnButton, true);
+
+        var child = document.querySelector(".child"); 
+        child.addEventListener("click", fnChild, true); 
+
+        var parent = document.querySelector(".parent"); 
+        parent.addEventListener("click", fnParent, true); 
+
+        document.querySelector("html").addEventListener("click", fnHTML, true);
+      }
+    </script>
+  </head>
+
+  <body onload="fn()">
+    <div class="parent">
+      <div class="child">
+        <button>bubbling</button>
+      </div>
+    </div>
+  </body>
+</html>
