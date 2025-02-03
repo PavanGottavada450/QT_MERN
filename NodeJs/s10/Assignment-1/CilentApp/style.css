@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+div{
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    
+}
+
+div :nth-last-child(1){
+    border: 3px solid red;
+    padding: 7px 20px;
+    color: red;
+    background: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+div :nth-last-child(2){
+    border: 3px solid blue;
+    padding: 7px 20px;
+    color: blue;
+    background: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+div :nth-last-child(3){
+    border: 3px solid green;
+    padding: 7px 20px;
+    color: green;
+    background: none;
+    font-weight: 600;
+    border-radius: 5px;
+}
