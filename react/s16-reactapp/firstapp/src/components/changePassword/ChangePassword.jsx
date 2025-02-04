@@ -2,7 +2,9 @@ import React from 'react'
 
 function ChangePassword() {
   return (
-    <div>ChangePassword component</div>
+    <div>
+      <h1>ChangePassword component</h1>
+    </div>
   )
 }
 
