@@ -1,0 +1,204 @@
+JavaScript Interview:
+============
+Q1)Explain Hoisting in javascript?
+
+Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top.
+
+Ex1:
+==
+hoistedVariable = 3;
+console.log(hoistedVariable); // outputs 3 even when the variable is declared after it is initialized	
+var hoistedVariable;
+
+
+Ex2:
+===
+hoistedFunction();  // Outputs " Hello world! " even when the function is declared after calling
+
+function hoistedFunction(){ 
+  console.log(" Hello world! ");
+} 
+
+Q2)Difference between “ == “ and “ === “ operators?
+
+Q3)Difference between var and let keyword in javascript.
+
+Q4)Explain Implicit Type Coercion in javascript
+Implicit type coercion in javascript is the automatic conversion of value from one data type to another. It takes place when the operands of an expression are of different data types.
+
+Ex1:
+==
+var x = 3;
+var y = "3";
+x + y // Returns "33" 
+
+Ex2:
+===
+var x = 24;
+var y = "Hello";
+x + y   // Returns "24Hello";
+
+
+Q5) Is javascript a statically typed or a dynamically typed language?
+
+Q6)What is NaN property in JavaScript?
+
+NaN property represents the “Not-a-Number” value. It indicates a value that is not a legal number.
+
+typeof of NaN will return a Number.
+
+Note- isNaN() function converts the given value to a Number type, and then equates to NaN
+
+Ex1:
+===
+isNaN("Hello")  // Returns true
+isNaN(345)   // Returns false
+isNaN('1')  // Returns false, since '1' is converted to Number type which results in 0 ( a number) 
+isNaN(true) // Returns false, since true converted to Number type results in 1 ( a number)
+isNaN(false) // Returns false
+isNaN(undefined) // Returns true
+
+
+Q4)Explain passed by value and passed by reference?
+
+In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.
+
+Pass by value:
+=========
+var x = 2;
+var z = y;
+
+
+Pass by reference:
+===========
+var obj = { name: "Vivek", surname: "Bisht" };
+var obj2 = obj;
+
+
+Q5) Explain Higher Order Functions in javascript?
+
+Q6)What is Promise in JavaScript?
+
+Q7)What are closures in JavaScript?
+
+Q8)What are the callback functions in JavaScript?
+
+Q9)What are the Proptotypes in JavaScript?
+
+Q10) Explain “this” keyword?
+
+->The “this” keyword refers to the object that the function is a property of.
+->The value of the “this” keyword will always depend on the object that is invoking the function.
+
+Ex1:
+==
+var obj = {
+    name:  "vivek",
+    getName: function(){
+    console.log(this.name);
+  }
+}
+   
+obj.getName();
+
+Q11)Explain call(), apply() and, bind() methods.
+
+
+1. call():
+ =====
+->It’s a predefined method in javascript.
+->This method invokes a method (function) by specifying the owner object.
+
+Ex1:
+==
+unction sayHello(){
+  return "Hello " + this.name;
+}
+        
+var obj = {name: "Sandy"};
+        
+sayHello.call(obj);
+        
+// Returns "Hello Sandy"
+
+2.apply():
+=======
+The apply method is similar to the call() method. The only difference is that,
+
+call() method takes arguments separately whereas, apply() method takes arguments as an array.
+
+Ex1:
+===
+function saySomething(message){
+  return this.name + " is " + message;
+}        
+var person4 = {name:  "John"};
+saySomething.apply(person4, ["awesome"]);
+
+
+3.bind():
+======
+This method returns a new function, where the value of “this” keyword will be bound to the owner object, which is provided as a parameter
+
+Ex1:
+==
+
+var bikeDetails = {
+    displayDetails: function(registrationNumber,brandName){
+    return this.name+ " , "+ "bike details: "+ registrationNumber + " , " + brandName;
+  }
+}
+   
+var person1 = {name:  "Vivek"};
+     
+var detailsOfPerson1 = bikeDetails.displayDetails.bind(person1, "TS0122", "Bullet");
+      
+// Binds the displayDetails function to the person1 object
+        
+      
+detailsOfPerson1();
+//Returns Vivek, bike details: TS0122, Bullet
+
+
+Q12)What is currying in JavaScript?
+
+Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
+
+Ex1:
+==
+function add (a) {
+  return function(b){
+    return a + b;
+  }
+}
+
+add(3)(4) 
+
+Q14)What is the use of a constructor function in javascript?
+
+Q15)What is DOM Explain with their methods?
+
+Q16)What is Encupsulation in JavaScript?
+
+Q17)What is Polymorpshim in JavaScript
+
+Q18)Difference between static keyword and non static keyword in JavaScript?
+
+Q19)What is between for and while loop in JavaScript?
+
+Q20)What is difference between while loop and do while loop?
+
+Q21)What is difference between break and continue statements in JavaScript?
+
+
+
+
+
+
+	
+
+
+
+
+
+
