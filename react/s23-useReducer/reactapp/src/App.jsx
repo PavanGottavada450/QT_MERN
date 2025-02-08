@@ -1,6 +1,6 @@
 import "./App.css";
 import UseReducer from "./Components/UseReducer";
-import UseState from "./Components/UseState";
+// import UseState from "./Components/UseState";
 
 
 function App() {
