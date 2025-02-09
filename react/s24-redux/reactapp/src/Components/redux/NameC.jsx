@@ -17,6 +17,7 @@ function NameC() {
         <h1>Name Component</h1>
         <input ref={inputRef} type="text" className='form-control my-4 ' />
         <button className='px-5 btn btn-outline-primary' onClick={getInputData}>Submit</button>
+        <p></p>
     </div>
   )
 }
