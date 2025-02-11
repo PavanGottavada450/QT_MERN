@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div>
-      {/* <TimerNoDep />
-      <TimerWithDep /> */}
+      {/* <TimerNoDep /> */}
+      {/* <TimerWithDep /> */}
       {/* <TimerWithValue /> */}
       <CleanUp /> 
     </div>

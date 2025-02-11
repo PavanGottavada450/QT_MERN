@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginFrom</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh; /* 100% of the viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: black;
+        }
+        .from{
+            width: 550px;
+            height: 500px;
+            /* border: 3px solid green; */
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red;
+            box-shadow: 1px 1px 10px 10px rgb(56, 50, 50);
+        }
+        p{
+            display: inline;
+            font-size: 15px;
+        }
+        .login_from{
+            border: 1px solid black;
+            border-radius: 0px 20px 20px 0px;
+            width: 300px;
+            height: 500px;
+        }
+        .input_box{
+            border: 1px solid rgb(159, 156, 156);
+            width: 250px;
+            height: 22px;
+            margin: 10px;
+            margin-left: 20px;
+        }
+        label{
+            margin: 20px;
+            font-size: 15px;
+        }
+        
+        #check_box,h2{
+            margin-left: 20px;
+        }
+        a{
+            margin-left: 40px;
+        }
+        button{
+            padding: 8px 30px;
+            background-color: rgb(61, 104, 245);
+            border: none;
+            border-radius: 3px;
+            margin: 40px;
+            color: white;
+            font-weight: bold;
+        }
+        img{
+            margin-top: 4px;
+            border-radius: 20px 0px 0px 20px; 
+        }
+        h2{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="from">
+        
+        <div class="image">
+            <img src="https://w0.peakpx.com/wallpaper/384/378/HD-wallpaper-itachi-akatsuki-itachi-uchiha-sasuke-sharingan-uchiha.jpg" alt="Itachi_pic" width="250px" height="501px">
+        </div>
+
+        <div class="login_from">
+            <h2>Registration From</h2>
+            <label for="fname">Full Name:</label><br>
+            <input type="text" id="fname" required class="input_box"><br>
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" required class="input_box"><br>
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" required class="input_box"><br>
+            <label for="cpass">Confirm Password:</label><br>
+            <input type="password" id="cpass" required class="input_box"><br>
+            <input type="checkbox" required id="check_box">
+            <p>By siging up,you agree to the <br><a href="">Play Term of Service</a></p><br>
+            <button>Register</button>
+            
+        </div>
+    </div>
+</body>
+</html>
