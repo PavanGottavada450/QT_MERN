@@ -1,0 +1,88 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+}
+
+.signup-container {
+    background: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.input-box {
+    margin: 1rem 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.gender-box {
+    color: #ccc;
+    text-align: left;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.gender-box input {
+    margin-left: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #3867d6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #274b9f;
+}
+
+p {
+    color: #ccc;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+p a {
+    color: #3867d6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
