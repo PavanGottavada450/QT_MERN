@@ -2,28 +2,34 @@ const express = require("express");
 const route = express.Router();
 const createConnection = require("../config/connection");
 const { ObjectId } = require("mongodb");
+const jwt = require("jsonwebtoken");
+const secret_key = "qwertyuioplkjhgfdsazxcvbnm";
+const fn1 = require("./tokenVerify");
 
-route.get("/getdata", async (req, res) => {
-  const productColl = await createConnection();
+route.get(
+  "/getdata",fn1,
+  async (req, res) => {
+    const productColl = await createConnection();
 
-  productColl
-    .find({})
-    .toArray()
-    .then((data) => {
-      res.json({
-        ok: true,
-        result: data,
+    productColl
+      .find({})
+      .toArray()
+      .then((data) => {
+        res.json({
+          ok: true,
+          result: data,
+        });
+      })
+      .catch((error) => {
+        res.json({
+          ok: false,
+          result: "Something went wrong while accessing the data",
+        });
       });
-    })
-    .catch((error) => {
-      res.json({
-        ok: false,
-        result: "Something went wrong while accessing the data",
-      });
-    });
-}); // http://localhost:8989/getdata
+  }
+); // http://localhost:8989/getdata
 
-route.post("/newproduct", async (req, res) => {
+route.post("/newproduct",fn1, async (req, res) => {
   const newProduct = req.body;
 
   try {
@@ -43,7 +49,7 @@ route.post("/newproduct", async (req, res) => {
   }
 }); // http://localhost:8989/newproduct
 
-route.put("/update", async (req, res) => {
+route.put("/update",fn1, async (req, res) => {
   var id;
   var newPrice;
   var newrating;
@@ -73,7 +79,7 @@ route.put("/update", async (req, res) => {
     });
 }); // http://localhost:8989/update
 
-route.delete("/delete", async (req, res) => {
+route.delete("/delete",fn1, async (req, res) => {
   var id = req.body.id;
   const coll = await createConnection();
 
