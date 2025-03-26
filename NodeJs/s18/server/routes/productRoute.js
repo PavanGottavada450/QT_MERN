@@ -1,14 +1,15 @@
 const express = require("express");
 const route = express.Router();
+const dotenv = require("dotenv");
 const createConnection = require("../config/connection");
 const { ObjectId } = require("mongodb");
 const jwt = require("jsonwebtoken");
-const secret_key = "qwertyuioplkjhgfdsazxcvbnm";
+// const secret_key = "qwertyuioplkjhgfdsazxcvbnm";
+dotenv.config({path:"./config.env"});
+const secret_key = process.env.SECRET_KEY;
 const fn1 = require("./tokenVerify");
 
-route.get(
-  "/getdata",fn1,
-  async (req, res) => {
+route.get("/getdata",fn1,async (req, res) => {
     const productColl = await createConnection();
 
     productColl
