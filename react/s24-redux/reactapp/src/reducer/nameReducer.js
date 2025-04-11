@@ -1,10 +1,20 @@
+// const nameReducer = (storeData, action) => {
+
+//     if(action.type === "NAME"){
+//         storeData = action.payload;
+//     }
+
+//     return storeData;
+// };
+
+// export default nameReducer;
+
 const nameReducer = (storeData, action) => {
+  if (action.type === "name") {
+    storeData = action.playload;
+  }
 
-    if(action.type === "NAME"){
-        storeData = action.payload;
-    }
-
-    return storeData;
+  return storeData;
 };
 
 export default nameReducer;

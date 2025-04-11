@@ -1,11 +1,11 @@
 import React from 'react'
 // import { UserContext } from './CompA'
 import { useContext } from 'react'
-import UserContext from './Context';
+import myContext from './Context';
 
 function CompD() {
 
-    const contextData = useContext(UserContext);
+    const contextData = useContext(myContext);
 
   return (
     <div className='box'>
