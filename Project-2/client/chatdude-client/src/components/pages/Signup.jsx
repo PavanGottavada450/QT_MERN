@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 function SignUp() {
   const navigate = useNavigate();
@@ -21,7 +22,8 @@ function SignUp() {
       .then((res) => {
         if (res.ok) {
           //navigate user to login page
-          alert("Signup successful!");
+          // alert("Signup successful!");
+          toast.success("Signed in successfully!");
           navigate("/home");
         }
         // Axios returns data in `res.data`
@@ -41,6 +43,7 @@ function SignUp() {
         console.log("Error Creating User", error);
         setError(true);
         setMessage(false);
+        toast.error("Error Creating User");
       });
   };
 

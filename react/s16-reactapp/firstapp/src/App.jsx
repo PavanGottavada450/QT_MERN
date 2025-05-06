@@ -16,7 +16,6 @@ import ChangePassword from "./components/changePassword/ChangePassword";
 import Wishlist from "./components/wishlist/Wishlist";
 import Orders from "./components/orders/Orders";
 
-
 function App() {
 
   return (
